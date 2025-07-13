@@ -108,6 +108,10 @@ body {
   margin: 0 auto;
   width: 90%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5rem;
 }
 
 .main-text {
@@ -132,4 +136,15 @@ body {
   text-align: center;
   color: var(--Gray-5);
   font-weight: 300;
+}
+
+.main-SSH {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.device-img {
+  width: 50%;
 }
