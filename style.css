@@ -238,6 +238,7 @@ body {
 }
 
 .footer-content {
+  max-width: 90rem;
   width: 90%;
   padding: 3rem 0;
   margin: 0 auto;
