@@ -98,8 +98,16 @@ body {
   background-color: var(--Green);
 }
 
+.iOS-btn:hover {
+  box-shadow: 1px 1px 10px var(--Green);
+}
+
 .mac-btn {
   background-color: var(--Blue);
+}
+
+.mac-btn:hover {
+  box-shadow: 1px 1px 10px var(--Blue);
 }
 
 /* Main Section */
@@ -112,6 +120,7 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 5rem;
+  overflow: hidden;
 }
 
 .main-text {
@@ -138,13 +147,140 @@ body {
   font-weight: 300;
 }
 
-.main-SSH {
-  width: 100%;
+.main-content {
+  width: 90%;
   display: flex;
+  column-gap: 6rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .device-img {
-  width: 50%;
+  width: 60%;
+}
+
+.main-article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.article {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+}
+
+.article-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--Gray-7);
+}
+
+.article-paragraph {
+  font-size: 1rem;
+  line-height: 1.85rem;
+  color: var(--Gray-5);
+  font-weight: 300;
+}
+
+/* CPS Section */
+.cps-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+.cps-article {
+  width: 100%;
+  text-align: center;
+}
+
+.cps-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--Gray-7);
+  margin-top: 2rem;
+}
+
+.cps-paragraph {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.85rem;
+  color: var(--Gray-5);
+  font-weight: 300;
+}
+
+/* Company Logos */
+.company-logos {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.clipBtn {
+  margin: 4rem 0;
+}
+
+/* Footer Section */
+.footer-container {
+  width: 100%;
+  background-color: hsl(0, 0%, 96%);
+}
+
+.footer-content {
+  width: 90%;
+  padding: 3rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links img {
+  width: 7%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.footer-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  color: var(--Gray-5);
+}
+
+.footer-article p:hover {
+  cursor: pointer;
+  color: var(--Green);
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.social-icons img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(88%) saturate(436%)
+    hue-rotate(135deg) brightness(94%) contrast(87%);
 }
